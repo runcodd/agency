@@ -24,8 +24,7 @@
 
 	<!-- Header CSS (first screen styles from header.min.css) - inserted in the build of the project -->
 	<!-- /*<style>@@include('header.min.css')</style>*/ -->
-	<style>::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,roboto,sans-serif;overflow-x:hidden}h1{font-size:3.75em}.before,.hero::before{content:'';width:100%;height:100%;position:absolute;top:0;left:0}.header{-webkit-transition:all 1s;transition:all 1s;height:60px;position:fixed;top:0;left:0;right:0;z-index:100}.header::after{clear:both;content:"";display:table}.header__logo{float:left;font-size:30px;color:rgba(255,255,255,.8);font-weight:700;height:60px;line-height:60px;text-decoration:none}.header__logo:hover{text-decoration:none;color:#fff}.header__nav{line-height:60px;margin:0;float:right}.header__nav li{display:inline-block;margin-left:20px}.header__nav li:last-child a{border:2px solid #fff;-webkit-border-radius:4px;border-radius:4px;color:#fff}.header__nav li:last-child a:hover{background-color:#fff;color:#555}.header__nav li a{text-decoration:none;text-transform:uppercase;color:#f2f2f2;padding:5px 10px;font-size:16px;font-weight:500}.header__nav li a:hover{color:#fff}.hero{position:relative;min-height:350px;height:100vh;width:100%;background-color:pink;background-image:url(/img/hero-bg.jpg);background-size:cover;background-position:center}.hero::before{background-image:-webkit-gradient(linear,left top,right top,from(#FF2121),to(#216BFF));background-image:-webkit-linear-gradient(left,#FF2121 0,#216BFF 100%);background-image:linear-gradient(to right,#FF2121 0,#216BFF 100%);opacity:.5}.hero__content{max-width:90%;position:absolute;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#fff;text-align:center}.hero__content h1{font-weight:400;margin:0 0 30px;padding:0;line-height:52px}.hero__content p{font-size:1.875em;font-weight:200;margin:0;padding:0;line-height:30px}.hero__content img{margin-top:30px;cursor:pointer}</style>
-
+	<style>::-webkit-input-placeholder{color:#666;opacity:1}:-moz-placeholder{color:#666;opacity:1}::-moz-placeholder{color:#666;opacity:1}:-ms-input-placeholder{color:#666;opacity:1}body input:focus:required:invalid,body input:required:valid,body textarea:focus:required:invalid,body textarea:required:valid{color:#666}body{font-size:16px;min-width:320px;position:relative;line-height:1.6;font-family:"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif,roboto,sans-serif;overflow-x:hidden}h1{font-size:3.75em}.before,.hero::before{content:'';width:100%;height:100%;position:absolute;top:0;left:0}.header{-webkit-transition:all 1s;transition:all 1s;height:60px;position:fixed;top:0;left:0;right:0;z-index:100}.header::after{clear:both;content:"";display:table}.header__logo{float:left;font-size:30px;color:rgba(255,255,255,.8);font-weight:700;height:60px;line-height:60px;text-decoration:none}.header__logo:hover{text-decoration:none;color:#fff}.header__nav{line-height:60px;margin:0;float:right}.header__nav li{display:inline-block;margin-left:20px}.header__nav li:last-child a{border:2px solid #fff;-webkit-border-radius:4px;border-radius:4px;color:#fff}.header__nav li:last-child a:hover{background-color:#fff;color:#555}.header__nav li a{text-decoration:none;text-transform:uppercase;color:#f2f2f2;padding:5px 10px;font-size:16px;font-weight:500}.header__nav li a:hover{color:#fff}.hero{position:relative;min-height:350px;height:100vh;width:100%;background-color:pink;background-image:url(../img/hero-bg.jpg);background-size:cover;background-position:center}.hero::before{background-image:-webkit-gradient(linear,left top,right top,from(#FF2121),to(#216BFF));background-image:-webkit-linear-gradient(left,#FF2121 0,#216BFF 100%);background-image:linear-gradient(to right,#FF2121 0,#216BFF 100%);opacity:.5}.hero__content{max-width:90%;position:absolute;top:50%;left:50%;margin-right:-50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);color:#fff;text-align:center}.hero__content h1{font-weight:400;margin:0 0 30px;padding:0;line-height:52px}.hero__content p{font-size:1.875em;font-weight:200;margin:0;padding:0;line-height:30px}.hero__content img{margin-top:30px;cursor:pointer}</style>
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
 	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
 
@@ -64,7 +63,7 @@
 	<!-- Custom HTML -->
 	<header class="header">
 		<div class="container">
-			<a href="/" class="header__logo">CSA</a>
+			<a href="" class="header__logo">CSA</a>
 			<ul class="header__nav">
 				<li class="nav-item"><a href="#">services</a></li>
 				<li class="nav-item"><a href="#">portfolio</a></li>
@@ -79,7 +78,7 @@
 		<div class="hero__content">
 			<h1>Creative Agency</h1>
 			<p>Experts in visual communication</p>
-			<img src="../img/play-button.svg" style="width:60px" alt="">
+			<img src="https://runcodd.github.io/agency/img/play-button.svg" style="width:60px" alt="">
 		</div>
 	</div>
 
@@ -92,7 +91,7 @@
 				<div class="col-md-6">
 					<div class="section-services__item">
 						<div class="section-services__img">
-							<img src="../img/icon-set/megaphone.svg" alt="megafone">
+							<img src="https://runcodd.github.io/agency/img/icon-set/megaphone.svg" alt="megafone">
 						</div>
 						<div class="section-services__text">
 							<h2>lorem</h2>
@@ -116,7 +115,7 @@
 				<div class="col-md-6">
 					<div class="section-services__item">
 						<div class="section-services__img">
-							<img src="../img/icon-set/profits.svg" alt="copywriter">
+							<img src="https://runcodd.github.io/agency/img/icon-set/profits.svg" alt="copywriter">
 						</div>
 						<div class="section-services__text">
 							<h2>lorem</h2>
@@ -127,7 +126,7 @@
 				<div class="col-md-6">
 					<div class="section-services__item">
 						<div class="section-services__img">
-							<img src="../img/icon-set/rich.svg" alt="">
+							<img src="https://runcodd.github.io/agency/img/icon-set/rich.svg" alt="">
 						</div>
 						<div class="section-services__text">
 							<h2>lorem</h2>
@@ -156,7 +155,7 @@
 				<h3>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo esse minima maiores accusamus voluptatem asperiores, quod mollitia similique laborum eligendi."</h3>
 				<div class="section-testimolials__client">
 					<div class="avatar">
-						<img src="../img/icon-set/user.svg" alt="user">
+						<img src="https://runcodd.github.io/agency/img/icon-set/user.svg" alt="user">
 					</div>
 					<div class="name"><p>Dave Goodman</p></div>
 				</div>
